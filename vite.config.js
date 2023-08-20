@@ -31,6 +31,10 @@ export default defineConfig({
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
+  //在開發過程中啟用 sourcemap
+  css: {
+	devSourcemap: true,
+  },
   server: {
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
